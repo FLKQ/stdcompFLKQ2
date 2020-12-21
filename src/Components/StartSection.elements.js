@@ -12,16 +12,17 @@ export const GetStartedSection = styled.section`
  video {
   object-fit: cover;
   width: 100%;
-  height: 972px;
+  height: 1010px; //972
   position: absolute;
   z-index: -1;
   padding-bottom: 0;
+  
 
  }
 `;
 
 export const GetStartedContainer = styled(Container)`
-height: 92vh;
+height: 93vh; //92
 width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@ width: 100%;
   align-items: center;
   object-fit: contain;
 
-${Container}
+
 `;
 
 export const GetStartedTitle = styled.h1`
