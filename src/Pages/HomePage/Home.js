@@ -8,6 +8,7 @@ import CardItemtestAdventure from '../../Components/CardItemtestAdventure'
 import { Card } from '@material-ui/core';
 import {Grid} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Footer from '../../Components/Footer'
 
 const useStyles = makeStyles(() => ({
         gridItem: {
@@ -40,6 +41,7 @@ const Home = () => {
                         <CardItemtestAdventure />
                      </Grid>
                 </Grid>
+            <Footer/>
         </>
     )
 }
