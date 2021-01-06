@@ -87,6 +87,10 @@ export const FooterSectionItems = styled.div`
   text-align: left;
   width: 160px;
   box-sizing: border-box;
+
+  @media screen and (max-width:766px){
+  width:100%;
+}
 `;
 
 export const FooterTitleNavigation = styled.h1`

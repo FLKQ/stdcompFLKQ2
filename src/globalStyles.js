@@ -36,6 +36,9 @@ export const Button = styled.button`
     background-color: ${({ primary }) => (primary ? "#4b59f7" : "#4b59f7")};
     border: 2px solid transparent;
   }
+  @media screen and (max-width:526px){
+    font-size: ${({ fontBig }) => (fontBig ? "30px" : "16px")};
+}
 `;
 
 export default GlobalStyle;
