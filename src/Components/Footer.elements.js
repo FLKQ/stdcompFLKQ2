@@ -88,9 +88,9 @@ export const FooterSectionItems = styled.div`
   width: 160px;
   box-sizing: border-box;
 
-  @media screen and (max-width:766px){
-  width:100%;
-}
+  @media screen and (max-width: 766px) {
+    width: 100%;
+  }
 `;
 
 export const FooterTitleNavigation = styled.h1`

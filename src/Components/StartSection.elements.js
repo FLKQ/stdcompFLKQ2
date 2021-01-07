@@ -27,13 +27,13 @@ export const GetStartedContainer = styled(Container)`
   align-items: center;
   object-fit: contain;
 
-  @media screen and (max-width:526px){
+  @media screen and (max-width: 526px) {
     height: 113vh;
   }
-  @media screen and (max-width:961px){
+  @media screen and (max-width: 961px) {
     height: 113vh;
   }
-  @media screen and (max-width:1293px){
+  @media screen and (max-width: 1293px) {
     height: 93vh;
   }
 `;
@@ -43,22 +43,22 @@ export const GetStartedTitle = styled.h1`
   font-size: 100px;
   margin-top: -100px;
 
-@media screen and (max-width:960px){
-  font-size: 60px;
-}
+  @media screen and (max-width: 960px) {
+    font-size: 60px;
+  }
 
-@media screen and (max-width:750px){
-  font-size: 50px;
-}
-@media screen and (max-width:1126px){
-  font-size: 60px;
-}
-@media screen and (max-width:716px){
-  font-size: 50px;
-}
-@media screen and (max-width:606px){
-  font-size: 40px;
-}
+  @media screen and (max-width: 750px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 1126px) {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 716px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 606px) {
+    font-size: 40px;
+  }
 `;
 
 export const GetStartedSubText = styled.p`
@@ -71,26 +71,25 @@ export const GetStartedButtons = styled.ul`
   list-style: none;
   margin-top: 50px;
 
-  @media screen and (max-width:526px){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
+  @media screen and (max-width: 526px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 export const GetStartedButtonItem = styled.li`
-
-@media screen and (max-width:526px){
-  display: flex;
-  flex-direction: column;
-}
+  @media screen and (max-width: 526px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const GetStartedButtonLinks = styled(Link)`
   margin-right: 20px;
 
-  @media screen and (max-width:526px){
-  margin-bottom: 50px;
-}
+  @media screen and (max-width: 526px) {
+    margin-bottom: 50px;
+  }
 `;

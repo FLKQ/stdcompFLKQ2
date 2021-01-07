@@ -9,7 +9,7 @@ import { Card } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../../Components/Footer";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles(() => ({
   gridItem: {},
@@ -19,20 +19,19 @@ const Home = () => {
   const classes = useStyles();
 
   return (
-    
-
     <motion.div
-    transition={{
-      duration: 1.5
-    }}
-    initial={{
-      y: -2000,
-      opacity: 0
-    }}
-    animate={{
-      y: 0,
-      opacity: 1
-    }}>
+      transition={{
+        duration: 1.5,
+      }}
+      initial={{
+        y: -2000,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+    >
       <StartSection />
       <Grid container justify="center" alignItems="center">
         <Grid item lg={5} sm={6} xs={12}>

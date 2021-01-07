@@ -15,7 +15,7 @@ import {
   NavbarButtonItem,
   NavbarButtonLink,
 } from "./Navbar.elements";
-import { useWindowScroll } from 'react-use';
+import { useWindowScroll } from "react-use";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -38,9 +38,11 @@ function Navbar() {
 
   window.addEventListener("resize", showButton);
 
-  const ScrollToProduct = () => window.scrollTo({top: 850, behavior: "smooth"})
-  const ScrollToHome = () => window.scrollTo({top:0, behavior:"smooth"})
-  const ScrollToServices = () => window.scrollTo({top: 2000, behavior:"smooth"})
+  const ScrollToProduct = () =>
+    window.scrollTo({ top: 850, behavior: "smooth" });
+  const ScrollToHome = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const ScrollToServices = () =>
+    window.scrollTo({ top: 2000, behavior: "smooth" });
 
   return (
     <>
@@ -48,7 +50,7 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavbarLogo to="/">
-              FLKQ
+                  FLKQ
               <NavbarIcon />
             </NavbarLogo>
             <MobileIcon onClick={handleClick}>
@@ -56,27 +58,35 @@ function Navbar() {
             </MobileIcon>
             <NavbarMenu onClick={handleClick} click={click}>
               <NavbarItem>
-                <NavbarLinks to="/" onClick={() => {
-                  closeMobileMenu();
-                  ScrollToHome();
-                }}>
+                <NavbarLinks
+                  to="/"
+                  onClick={() => {
+                    closeMobileMenu();
+                    ScrollToHome();
+                  }}
+                >
                   Home
                 </NavbarLinks>
               </NavbarItem>
               <NavbarItem>
-                <NavbarLinks to="/" onClick={() => {
-                  closeMobileMenu();
-                  ScrollToServices();
-                }}>
+                <NavbarLinks
+                  to="/"
+                  onClick={() => {
+                    closeMobileMenu();
+                    ScrollToServices();
+                  }}
+                >
                   Services
                 </NavbarLinks>
               </NavbarItem>
               <NavbarItem>
-                <NavbarLinks to="/" onClick={() => {
-                  closeMobileMenu();
-                  ScrollToProduct();
-                  
-                }}>
+                <NavbarLinks
+                  to="/"
+                  onClick={() => {
+                    closeMobileMenu();
+                    ScrollToProduct();
+                  }}
+                >
                   Products
                 </NavbarLinks>
               </NavbarItem>
@@ -89,10 +99,15 @@ function Navbar() {
                   </NavbarButtonLink>
                 ) : (
                   <NavbarButtonLink to="/sign-up">
-                    <Button onClick={() => {
-                     closeMobileMenu();
-                     ScrollToHome();
-                    }} fontBig primary colorized>
+                    <Button
+                      onClick={() => {
+                        closeMobileMenu();
+                        ScrollToHome();
+                      }}
+                      fontBig
+                      primary
+                      colorized
+                    >
                       SIGN UP
                     </Button>
                   </NavbarButtonLink>
