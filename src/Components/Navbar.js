@@ -42,7 +42,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavbarContainer>
-            <NavbarLogo>
+            <NavbarLogo to="/">
               FLKQ
               <NavbarIcon />
             </NavbarLogo>

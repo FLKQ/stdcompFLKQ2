@@ -11,7 +11,7 @@ export const GetStartedSection = styled.section`
   video {
     object-fit: cover;
     width: 100%;
-    height: 1010px; //972
+    height: 93vh; //972
     position: absolute;
     z-index: -1;
     padding-bottom: 0;
@@ -34,7 +34,7 @@ export const GetStartedContainer = styled(Container)`
     height: 113vh;
   }
   @media screen and (max-width:1293px){
-    height: 113vh;
+    height: 93vh;
   }
 `;
 
