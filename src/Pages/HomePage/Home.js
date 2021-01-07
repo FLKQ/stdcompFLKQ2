@@ -37,7 +37,6 @@ const Home = () => {
           <CardItemtestAdventure />
         </Grid>
       </Grid>
-      <Footer />
     </>
   );
 };

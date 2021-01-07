@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
+import Footer from './Components/Footer';
 import GlobalStyle from "./globalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/HomePage/Home";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/products" exact component={Products} />
         <Route path="/sign-up" exact component={SignUp} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
