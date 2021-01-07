@@ -15,6 +15,7 @@ import {
   NavbarButtonItem,
   NavbarButtonLink,
 } from "./Navbar.elements";
+import { useWindowScroll } from 'react-use';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -37,6 +38,10 @@ function Navbar() {
 
   window.addEventListener("resize", showButton);
 
+  const ScrollToProduct = () => window.scrollTo({top: 850, behavior: "smooth"})
+  const ScrollToHome = () => window.scrollTo({top:0, behavior:"smooth"})
+  const ScrollToServices = () => window.scrollTo({top: 2000, behavior:"smooth"})
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -51,30 +56,43 @@ function Navbar() {
             </MobileIcon>
             <NavbarMenu onClick={handleClick} click={click}>
               <NavbarItem>
-                <NavbarLinks to="/" onClick={closeMobileMenu}>
+                <NavbarLinks to="/" onClick={() => {
+                  closeMobileMenu();
+                  ScrollToHome();
+                }}>
                   Home
                 </NavbarLinks>
               </NavbarItem>
               <NavbarItem>
-                <NavbarLinks to="/services" onClick={closeMobileMenu}>
+                <NavbarLinks to="/" onClick={() => {
+                  closeMobileMenu();
+                  ScrollToServices();
+                }}>
                   Services
                 </NavbarLinks>
               </NavbarItem>
               <NavbarItem>
-                <NavbarLinks to="/products" onClick={closeMobileMenu}>
+                <NavbarLinks to="/" onClick={() => {
+                  closeMobileMenu();
+                  ScrollToProduct();
+                  
+                }}>
                   Products
                 </NavbarLinks>
               </NavbarItem>
               <NavbarButtonItem>
                 {button ? (
                   <NavbarButtonLink to="/sign-up">
-                    <Button primary colorized>
+                    <Button primary colorized onClick={ScrollToHome}>
                       SIGN UP
                     </Button>
                   </NavbarButtonLink>
                 ) : (
                   <NavbarButtonLink to="/sign-up">
-                    <Button onClick={closeMobileMenu} fontBig primary colorized>
+                    <Button onClick={() => {
+                     closeMobileMenu();
+                     ScrollToHome();
+                    }} fontBig primary colorized>
                       SIGN UP
                     </Button>
                   </NavbarButtonLink>

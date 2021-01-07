@@ -12,6 +12,7 @@ import { Button } from "../globalStyles";
 import { IconContext } from "react-icons/lib";
 import Earth from "../Videos/Earth.mp4";
 
+
 const StartSection = () => {
   return (
     <>
