@@ -3,6 +3,7 @@ import Input from "../../Components/Input";
 import SignUpTop from "../../Components/SignUpTop";
 import SingUpBottom from "../../Components/SingUpBottom";
 import { motion } from "framer-motion";
+import TopLabel from "../../Components/Input.elements";
 
 const SignUp = () => {
   return (
@@ -20,9 +21,9 @@ const SignUp = () => {
       }}
     >
       <SignUpTop />
-      <Input label="" type="text" text="Username *" />
-      <Input label="" type="text" text="Email address *" />
-      <Input label="" type="password" text="Password *" />
+      <Input label="" type="text" text="Username "/>
+      <Input label="" type="text" text="Email address " />
+      <Input label="" type="password" text="Password " />
       <SingUpBottom />
       <div />
     </motion.div>
@@ -30,3 +31,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+

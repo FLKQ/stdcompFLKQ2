@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
 
 export const Container = styled.div`
   display: flex;
@@ -50,3 +51,5 @@ export const CreateAcc = styled.h1`
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 `;
+
+
