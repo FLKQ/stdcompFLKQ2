@@ -60,6 +60,7 @@ const Footer = () => {
             </FooterSectionItems>
             <FooterSectionItems>
               <FooterTitleNavigation> Contact Us </FooterTitleNavigation>
+              
               <FooterParagraphNavigationLink>
                 {" "}
                 Contact{" "}

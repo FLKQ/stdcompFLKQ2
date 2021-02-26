@@ -7,6 +7,7 @@ import {
   GetStartedButtons,
   GetStartedButtonItem,
   GetStartedButtonLinks,
+  GetStartedNewButton
 } from "./StartSection.elements";
 import { Button } from "../globalStyles";
 import { IconContext } from "react-icons/lib";
@@ -25,14 +26,14 @@ const StartSection = () => {
           <GetStartedButtons>
             <GetStartedButtonItem>
               <GetStartedButtonLinks to="/sign-up">
-                <Button fontBig primary colorized>
+                <GetStartedNewButton fontBig primary colorized>
                   GET STARTED{" "}
-                </Button>
+                </GetStartedNewButton>
               </GetStartedButtonLinks>
               <GetStartedButtonLinks to="/trailer">
-                <Button fontBig primary={false} colorized={false}>
+                <GetStartedNewButton fontBig primary={false} colorized={false}>
                   WATCH TRAILER{" "}
-                </Button>
+                </GetStartedNewButton>
               </GetStartedButtonLinks>
             </GetStartedButtonItem>
           </GetStartedButtons>

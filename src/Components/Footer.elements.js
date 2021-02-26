@@ -72,6 +72,11 @@ export const FooterNavWrapper = styled.div`
   width: 100%;
   max-width: 1000px;
   justify-content: center;
+
+  @media screen and (max-width:600px){
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const FooterNavSection = styled.section`
@@ -90,6 +95,10 @@ export const FooterSectionItems = styled.div`
 
   @media screen and (max-width: 766px) {
     width: 100%;
+    margin: 0;
+    padding-right: 8px;
+    padding-left: 42px;
+    padding-bottom: 20px;
   }
 `;
 
