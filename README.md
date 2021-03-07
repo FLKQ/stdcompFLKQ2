@@ -1,4 +1,4 @@
 # react + styled components + framer motion.
-# adaptive 
+# Fully Adaptive 
 
 # https://gallant-euler-fa03ed.netlify.app/
